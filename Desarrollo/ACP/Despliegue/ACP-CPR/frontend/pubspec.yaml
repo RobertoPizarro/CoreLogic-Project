@@ -1,0 +1,53 @@
+name: frontend
+description: "ACP — Aplicación de Control Presupuestal Personal y Compartido"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  shimmer: ^3.0.0
+  fl_chart: ^0.70.2
+
+  # Estado
+  flutter_riverpod: ^2.6.1
+
+  # Supabase
+  supabase_flutter: ^2.8.4
+
+  # HTTP client
+  dio: ^5.7.0
+
+  # Almacenamiento seguro del JWT
+  flutter_secure_storage: ^9.2.4
+
+  # Formateo
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/ACPlogo.png
+    - assets/Googlelogo.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/ACPlogo_symbol.png"
+  adaptive_icon_background: "#066C82"
+  adaptive_icon_foreground: "assets/ACPlogo_symbol.png"
